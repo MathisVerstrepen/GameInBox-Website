@@ -1,0 +1,225 @@
+<div id='doc_w' class='window'>
+    <div class='title_zone1' id='doc_title_zone'>
+        <div class='w_title'>Documentations et informations</div>
+    </div>
+    <div id='d_main_c'>
+        <div class='selectPanel'>
+            <div class='selectPanelTitle' >Catégories</div>
+            <div class='selectDocCat docSelect' id='general-b'>Informations générales du serveur</div>
+            <div class='selectDocCat' id='generalCommand-b'>Commandes générales utiles</div>
+            <div class='selectDocCat' id='commandClaim-b'>Commandes relatives aux <b> claims</b></div>
+            <div class='selectDocCat' id='commandShops-b'>Commandes relatives aux <b> shops</b></div>
+            <div class='selectDocCat' id='rules-b'>Règlements</b></div>
+        </div>
+        <div class='infoPanel' id='general'>
+            <div class="infoTitle1">Informations générales du serveur</div>
+            <div class="infoTitle2">Version du jeu</div>
+            <div class="infoContent1">Minecraft Java Edition 1.18.1.</div>
+            <div class="infoTitle2">IP du serveur</div>
+            <div class="infoContent1">gameinbox.net</div>
+            <div class="infoTitle2">Le serveur est-t-il ouvert aux cracks ?</div>
+            <div class="infoContent1">Non.</div>
+            <div class="infoTitle2">Seed de la map</div>
+            <div class="infoContent1">diikstrapog</div>
+            <div class="infoTitle2">Le serveur est-t-il limité dans le temps ?</div>
+            <div class="infoContent1">Non, nous visons un support à long terme du serveur.</div>
+            <div class="infoTitle2">La map est-t-elle pré-générée ?</div>
+            <div class="infoContent1">Oui, la map est pré-générée dans l'overworld dans un cercle de diamètre de 150.000 blocks.</div>
+            <div class="infoTitle2">Le serveur est-t-il ouvert à tous</div>
+            <div class="infoContent1">L'admission est ouverte à tous le monde, cependant l'accès au serveur ne peut se faire qu'après un entretien avec un administrateur du serveur. Pour avoir une chance de rejoindre l'aventure rejoignez le discord : <span class='rbold'>discord.gg/gqZv7MqFRn</span></div>
+            <div class="infoTitle2">Les mods clients sont-t-ils autorisés ?</div>
+            <div class="infoContent1">Tous les mods clients (ex: Xaeros MiniMap, Litematica, Sodium... ) sont autorisés tant qu'ils ne se réfèrent pas à de la triche. (voir règlement)</div>
+        </div>
+        <div class='infoPanel' id='generalCommand'>
+            <div class="infoTitle1">Commandes générales utiles</div>
+            <div class="infoTitle2">Home</div>
+            <div class="infoContent1">Les homes vous permettrons de vous TP à des endroits enregistrés, ils sont limités à deux par joueur.</div>
+            <div class="infoTitle3">- Créer un home</div>
+            <div class="infoContent1"><b>/home set {nom du home}</b> ou <b>/home new {nom du home}</b></div>
+            <div class="infoTitle3">- Supprimer un home</div>
+            <div class="infoContent1"><b>/home delete {nom du home}</b> ou <b>/home remove {nom du home}</b></div>
+            <div class="infoTitle3">- Lister vos homes</div>
+            <div class="infoContent1"><b>/home</b></div>
+            <div class="infoTitle3">- Utiliser un home</div>
+            <div class="infoContent1"><b>/home {nom du home}</b></div>
+            <div class="infoTitle2">Base</div>
+            <div class="infoContent1">Cette commande vous permet de définir la position de votre base, ce qui permet par exemple de rendre cette information disponible sur le site.</div>
+            <div class="infoContent1"><b>/base</b></div>
+            <div class="infoTitle2">Couleur</div>
+            <div class="infoContent1">Cette commande vous permet de définir votre couleur, ce qui permet par exemple de changer la couleur de vos claims sur la bluemap ou la couleur de vos courbes sur le site.</div>
+            <div class="infoContent1"><b>/color {couleur en hex}</b></div>
+            <div class="infoContent1">Ex: /color 00ff00 pour changer votre couleur en vert.</div>
+            <div class="infoTitle2">Tag</div>
+            <div class="infoContent1">Cette commande vous permet de définir votre tag visible dans le tab, il est limité à 8 caractères</div>
+            <div class="infoContent1"><b>/tag {tag souhaité}</b></div>
+        </div>
+        <div class='infoPanel' id='commandClaim'>
+            <div class="infoTitle1">Commandes relatives aux claims</div>
+            <div class="infoTitle2">Informations</div>
+            <div class="infoContent1">Les claims vous permettent de protéger des chunks (segments de 16x16) contre les autres joueurs.
+                Dans un claim, tous les joueurs non autorisés par le propriétaire (voir /claim trust) n'aurons qu'une interaction limitée avec la zone protégée (impossibilité de construire, d'interagir avec certains objets...).
+                Le nombre de claims initialement disponible est de 4, vous en gagnez 2 suplémentaires par heure de jeu, il n'y a pas de maximum.
+                Vous pouvez voir les limitations des chunks en faisant F3+G.
+            </div>
+            <div class="infoTitle2">Commandes</div>
+            <div class="infoTitle3">- Créer un claim</div>
+            <div class="infoContent1"><b>/claim here</b></div>
+            <div class="infoTitle3">- Supprimer un claim</div>
+            <div class="infoContent1"><b>/claim delete</b></div>
+            <div class="infoTitle3">- Obtenir les informations sur un claim</div>
+            <div class="infoContent1"><b>/claim info</b></div>
+            <div class="infoTitle3">- Ajouter un joueur de confiance</div>
+            <div class="infoContent1">Ce joueur pourra modifier ce chunk.</div>
+            <div class="infoContent1"><b>/claim trust {nom du joueur}</b></div>
+            <div class="infoTitle3">- Supprimer un joueur de confiance</div>
+            <div class="infoContent1">Ce joueur ne pourra plus modifier ce chunk.</div>
+            <div class="infoContent1"><b>/claim untrust {nom du joueur}</b></div>
+            <div class="infoTitle3">- Autoriser ou non les explosions de TNT</div>
+            <div class="infoContent1">Permet d'activer ou de désactiver les explosions de TNT dans les claims notamment pour les usines en redstone qui utilisent des TNT, est défini sur OFF de base.</div>
+            <div class="infoContent1"><b>/claim explosions {on/off}</b></div>
+            <div class="infoTitle3">- Lister les commandes</div>
+            <div class="infoContent1"><b>/claim</b></div>
+        </div>
+        <div class='infoPanel' id='commandShops'>
+            <div class="infoTitle1">Commandes relatives aux shops</div>
+            <div class="infoTitle2">Informations</div>
+            <div class="infoContent1">Un système de panneau vous permet de vendre et d'acheter des items en toute sécurité. Il existe deux
+                modes d'échanges: mode achat du client (le client achète un produit contre du diamant) et le mode vente du client (le client vend
+                un produit contre des diamants).
+            </div>
+            <div class="infoContent1">Une fois le stock du coffre mis à jour, le propriétaire du magasin doit frapper le panneau (clic gauche sans le casser) afin de le mettre à jour.</div>
+            <div class="infoTitle2">Mode achat du client</div>
+            <div class="infoContent1">
+                Posez un panneau sur le chest voulu, et marquez sur le panneau ceci (ne retirez pas les "[]") :
+                <div class='shopCont'>
+                    <p>[sell]</p><p>{nom de l'item}</p><p>{quantité}</p><p>{prix}</p>
+                </div>
+                Exemple: je veux vendre aux clients 64 stones pour un diamant.
+                <div class='shopCont'>
+                    <p>[sell]</p><p>STONE</p><p>64</p><p>1</p>
+                </div>
+            </div>
+            <div class="infoContent1">Pour ajouter des items en stocks, mettez les dans le chest.</div>
+            <div class="infoContent1">Pour récupérer les diamants issus des ventes, faites un clic droit en sneak sur le panneau.</div>
+            <div class="infoTitle2">Mode vente du client</div>
+            <div class="infoContent1">
+                Posez un panneau sur le chest voulu, et marquez sur le panneau ceci (ne retirez pas les "[]") :
+                <div class='shopCont'>
+                    <p>[buy]</p><p>{nom de l'item}</p><p>{quantité}</p><p>{prix}</p>
+                </div>
+                Exemple: je veux acheter aux clients 64 glowstones pour 4 diamants.
+                <div class='shopCont'>
+                    <p>[buy]</p><p>GLOWSTONE</p><p>64</p><p>4</p>
+                </div>
+            </div>
+            <div class="infoContent1">Pour ajouter des diamants en stocks NE LES METTEZ PAS DANS LE COFFRE, vous devez faire un clic droit avec les diamants pour les stocker dans le shop.</div>
+            <div class="infoContent1">Les blocks achetés se retrouvent dans le chest.</div>
+            <div class="infoContent1">Si vous voulez récuperer les diamants que vous avez stockés dans le shop, faites un clic droit en sneak sur le panneau.</div>
+        </div>
+        <div class='infoPanel' id='rules'>
+            <div class="infoTitle1">Règlements des services de GameInBox Network</div>
+            <div class="infoTitle2">I - Globalités</div>
+            <div class="infoContent1">Ce document regroupe tous les règlements relatifs aux services hébergés ou maintenus par GameInbox Network.
+                En utilisant l’un de ces services, même d’une manière brève, l’utilisateur s’engage à respecter les règles établies afin que la stabilité 
+                du service soit maintenue. En cas de non-respect de l’une ou de plusieurs des règles établies, un membre de l’équipe de modération 
+                (recruté par l’un des opérateurs du service) se devra d’appliquer une sanction à l’utilisateur. Cette sanction peut aller de la 
+                suspension de l’accès de l’utilisateur à certaines fonctionnalités du service jusqu’à l’exclusion définitive de celui-ci.
+                Si l’action d’un utilisateur est jugée comme trop “dangereuse” pour la stabilité de plusieurs services du réseau, 
+                celui-ci pourra reçevoir une sanction sur tous les services ciblés.
+            </div>
+            <div class="infoTitle2">II - Motifs</div>
+            <div class="infoContent1">Une sanction appliquée à l’utilisateur peut contenir un motif si l’auteur de la sanction le décide. 
+                Il se peut que certaines sanctions s’appliquent de manière <span class='rbold'>automatique</span>. Dans le cas où certaines sanctions sont notées comme sans motif, 
+                l’utilisateur se réserve le droit de contacter un opérateur de service afin de connaître le motif de la sanction.</div>
+            <div class="infoTitle2">III - Annulation d’une sanction</div>
+            <div class="infoContent1"><span class='rbold'>Une sanction peut être revue ou annulée si le service le permet. Cependant, la sanction restera listée dans 
+                l’historique des sanctions de l’utilisateur avec la mention “REVU” ou “ANNULÉ”.
+                Dans tous les cas, si un utilisateur devient insistant envers un membre de l’équipe afin que celui-ci puisse revoir sa sanction, 
+                la sanction se verra <span class='runderline'>triplée</span>.</span></div>
+            <div class="infoTitle2">IV - Accès aux services</div>
+            <div class="infoContent1">L’accès aux différents services est défini par le règlement spécifique de ceux-ci. Ils peuvent être accessibles 
+                publiquement ou même privés, sur invitation.
+                L’accès à un service privé sans autorisation est passible de sanctions.
+                Le nom d’utilisateur ainsi que toutes les informations publiques ou privées d’un utilisateur se doivent d’être conforme aux spécifications 
+                du service ainsi qu’au règlement présent. Les informations racistes, antisémites, homophobes ou toute autre forme nocive et péjorative 
+                seront immédiatement sanctionnées d’un bannissement définitif du service exploité.</div>
+            <div class="infoTitle3">Exploitation de faille(s)</div>
+            <div class="infoContent1">L’exploitation de faille(s) sur un service afin d’obtenir un avantage est <span class='rbold'>strictement interdite et sera immédiatement 
+                sanctionnée.</span>
+            Toutefois, si une faille a été détectée, il est vivement conseillé de la signaler à l’administration du service ainsi que de conserver 
+            le silence sur l’existence de la faille.</div>
+            <div class="infoTitle3">Interaction avec la modération</div>
+            <div class="infoContent1">Chaque utilisateur se doit d’être respectueux avec l’équipe de modération du service et l’équipe de modération <span class='rbold'>se 
+                doit</span> de traiter les demandes de chaque utilisateur sans forcément devoir y donner suite.
+                <span class='rbold'>Tout utilisateur non modérateur faisant croire aux autres utilisateurs du service qu’il possède des droits de modération se verra reçevoir 
+                une sanction définitive. Il en vient de même pour un utilisateur usurpant l’identité d’un autre.</span></div>
+            <div class="infoTitle2">V - Règlements relatifs aux services</div>
+            <div class="infoTitle3">GameInBox Minecraft</div>
+            <div class="infoContent1"><span class='rbold'>ameInBox Minecraft</span>G est un serveur de jeu relatif au jeu <span class='runderline'>Minecraft </span>dans sa version Java et appartenant à Mojang Studios 
+                (Stockholm).</div>
+            <div class="infoTitle3">Logiciels tiers</div>
+            <div class="infoContent1">L’utilisation de logiciels tiers est autorisée tant qu’elle ne permet pas au joueur d’avoir accès à des informations 
+                normalement indisponibles en partie de jeu classique et tant qu’elle ne pose aucun déséquilibre au sein d’une partie. Par exemple, 
+                l’utilisation d’un logiciel de triche accorde un déséquilibre et est donc prohibée. De plus, l’utilisation d’un logiciel de type “xray” 
+                (vision à travers les paroies afin d’accéder à des ressources plus rapidement) est strictement interdite.
+                <span class='rbold'>L’utilisation de logiciels/outils non autorisés est passible de lourdes sanctions.</span> </div>
+            <div class="infoTitle3">Responsabilité des joueurs et de leur compte</div>
+            <div class="infoContent1">Chaque utilisateur ayant joué est responsable de son compte. GameInBox n’est en aucun cas responsable et n’est pas obligé 
+                de prendre des mesures afin d’aider et contre les joueurs n’étant plus maître de leur compte.</div>
+            <div class="infoTitle3">Lobby et Game</div>   
+            <div class="infoContent1">Nous qualifions de serveur Lobby tout serveur dont le but premier est de réorienter les joueurs vers les différents modes 
+                de jeux proposés par le serveur. Un Lobby est également un serveur de jeu par défaut : Les joueurs se connectant au réseau sont en premier lieu 
+                dirigés vers un Lobby. De plus, si le serveur actuel où se trouve le joueur vient à devenir instable voir inaccessible, le joueur se voit 
+                redirigé vers un des serveurs Lobby.
+                Nous qualifions de serveur Game tout serveur proposant du contenu afin de divertir le joueur. Différents types de serveurs Game sont proposés :</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Accessibilité</th>
+                        <th>Dernière mise-à-jour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Survival</td>
+                        <td class='open'>OPEN</td>
+                        <td>05/02/2022</td>
+                    </tr>
+                    <tr>
+                        <td>MineBall</td>
+                        <td class='open'>OPEN</td>
+                        <td>05/02/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Chaos</td>
+                        <td class='clos'>CLOS</td>
+                        <td>05/02/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="infoTitle3">Survival</div>   
+            <div class="infoTitle4">Précisions générales</div>  
+            <div class="infoContent1">L’objectif du serveur survie est de laisser un <span class='runderline'>maximum de libertés aux joueurs.</span> Le but de ce règlement n’est pas de 
+                limiter l’expérience des joueurs mais de garantir une bonne <span class='runderline'>entente entre les joueurs</span> ainsi qu’une <span class='runderline'>expérience de jeu optimale.</span>
+                Ce règlement ne peut pas et ne pourra jamais encadrer intégralement les notions mobilisées sur le serveur. <span class='rbold'>Nous comptons sur votre bonne 
+                volonté afin d’agir dans l’intérêt de tous si un point précis n’est pas indiqué dans ce document.</span></div>
+            <div class="infoTitle4">Système de claims</div>  
+            <div class="infoContent1">Le système de claim (claim = protection) est un système visant à protéger les constructions des 
+                joueurs. Nous appelons un claim un chunk protégé.
+                Lorsqu’un joueur autorise un autre joueur à construire dans ses claims, celui-ci assume la responsabilité des modifications 
+                émises dans les chunks protégés.
+                Les commandes utilitaires du système de claim sont accessibles via la commande en jeu “/claim”.</div>
+            <div class="infoTitle4">Constructions publiques</div>
+            <div class="infoContent1">Dans le serveur, il se peut qu’il y ait des constructions situées dans des chunks non protégés. 
+                La modification de ces constructions et des ressources qui la composent n’est possible qu’après autorisation de l’auteur 
+                de celles-ci.
+                <span class='runderline'>ATTENTION :</span> La modification/destruction d’un lieu qui ne vous appartient pas est considéré comme du <span class='rbold'>grief </span>et est 
+                lourdement sanctionnable !</div>
+            <div class="infoTitle4">Échanges et trocs</div>   
+            <div class="infoContent1">Les échanges s’effectuent aux risques et périls des joueurs. Nous vous encourageons à utiliser le 
+                système d’achats/de vente par coffres dès que possible. L’équipe de modération peut ne pas donner suite à une réclamation 
+                effectuée par un joueur ayant été victime d’un échange inégal.</div> 
+        </div>
+    </div>
+</div>

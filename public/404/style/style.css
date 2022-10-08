@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat';
+   overflow: hidden
+}
+
+#main_w {
+    display: grid;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+
+#error {
+   font-size: 500px;
+   grid-column: 2;
+   grid-row: 2;
+   align-self: center;
+   justify-self: center;
+   font-weight: 500
+}
+
+#notfound {
+   font-size: 50px;
+   grid-column: 2;
+   grid-row: 3;
+   align-self: center;
+   justify-self: center;
+   font-weight: 600
+}
+
+#dkt_logo1 {
+   grid-column: 2;
+   grid-row: 4;
+   align-self: end;
+   justify-self: center;
+   height: 70px;
+}

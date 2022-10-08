@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,body {
+   margin: 0;
+   padding: 0;
+   overflow: hidden
+}
+
+.main_w {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 100vh;
+}
+
+.left_w {
+    z-index: 2;
+    background-color: black;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden
+}
+
+.whited {
+    position: relative;
+    height: 261px;
+    width: 50px;
+    transform: translateY(-1px);
+    background-color: white;
+    animation: startupdw 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.right_w {
+    display: grid;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+}
+
+.d_svg, .iikstra_svg {
+    transform: scale(4);
+    position: relative;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.iikstra_svg {
+    animation: startupiikstra 1.5s;
+    animation-fill-mode: forwards; 
+}
+
+.d_svg {
+    animation: startupd 1.5s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes startupd {
+  from {
+    left: 250px
+  }
+
+  to {
+    left: 464px
+  }
+}
+
+@keyframes startupdw {
+  from {
+    left: 50px
+  }
+
+  to {
+    left: 0px
+  }
+}
+
+@keyframes startupiikstra {
+  from {
+    left: -1000px
+  }
+
+  to {
+    left: 464px
+  }
+}
+
+
+.d_svg {
+
+}
+
+.iikstra_svg {
+
+}

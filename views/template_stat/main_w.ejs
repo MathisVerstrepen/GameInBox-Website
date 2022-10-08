@@ -1,0 +1,49 @@
+<div class='window'>
+  <div class='title_c'>
+    <div class='title' id='class_title'></div>
+    <div id='title_sub'></div>
+  </div>
+  <div class='more_info_b_c'>
+    <div class='more_info_b'>➔ Plus d'infos</div>
+  </div>
+  <div class='loader'>
+    <div class='title'>Obtention des données ...</div>
+    <div class='pourcent'>0%</div>
+    <div class="progress">
+      <div class="progressBar"></div>
+    </div>
+  </div>
+  <div class='redisError'>
+    <img src='/ressources/icon/Redis_Logo.svg' height='200px' width='200px'>
+    <div></div>
+  </div>
+  <div class='error'>ERREUR<span class='error_desc'></span></div>
+  <div class='chart_c'>
+    <canvas id="chart" width="400" height="400"></canvas>
+  </div>
+  <div class='settings_c'>
+    <div class='old_data_c'>
+      <div class='old_data_title'>Isoler les données ?</div>
+      <div class='old_data_yes' id='d_yes'>OUI</div>
+      <div class='old_data_no old_data_selected' id='d_no'>NON</div>
+    </div>
+    <div class='stack_c'>
+      <div class='stack_title'>Cumuler les données ?</div>
+      <div class='stack_yes' id='s_yes'>OUI</div>
+      <div class='stack_no stack_selected' id='s_yes'>NON</div>
+    </div>
+    <div class='date_c'>
+      <div class='date_title'>Selectionner la plage de dates</div>
+      <input type="text" id="datepickerStart">
+      <input type="text" id="datepickerEnd">
+    </div>
+    <div class='hide_c'>
+      <div class='hide'>Cacher tout</div>
+      <div class='show'>Montrer tout</div>
+    </div>
+  </div>
+  <div class='more_info_c'>
+    <div class='info_back'>← Retour</div>
+    <div class='info_title'></div>
+  </div>
+</div>

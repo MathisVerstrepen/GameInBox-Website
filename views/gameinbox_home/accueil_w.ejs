@@ -1,0 +1,62 @@
+<div id='accueil_w' class='window'>
+    <div class='title_zone1'>
+        <div class='w_title'>Informations Générales</div>
+        <div class='w_subtitle'>Serveur Minecraft Survie Vanilla 1.18</div>
+    </div>
+    <div id='player' class='mw_box'>
+      <p id='cp_title'>Joueurs en ligne</p>
+      <div id="container"></div>
+      <hr id='hr_comp'/>
+      <div id='compare_player'>
+        <img id="arrow" src="/ressources/icon/up_arrow.svg" alt="Increase" height="200px" widht="200px">
+        <p id='compare_title'></p>
+      </div>
+    </div>
+    <div id='tps' class='mw_box'>
+      <p id='tps_title'>Ticks par seconde</p>
+      <div id='tpsvc1'>
+        <p class='tps_v_title'>Actuel</p>
+        <p id='value_now' class=''> </p>
+      </div>
+      <hr id='hrtps1'/>
+      <div id='tpsvc2'>
+        <p class='tps_v_title'>Dernière heure</p>
+        <p id='value_1h' class=''> </p>
+      </div>
+      <hr id='hrtps2'/>
+      <div id='tpsvc3'>
+        <p class='tps_v_title'>Dernières 24h</p>
+        <p id='value_24h' class=''> </p>
+      </div>
+    </div>
+    <div id='sdj' class='mw_box'>
+      <div id='sdj_title'>Statistique du jour</div>
+      <div id='sdj_content'>
+        <div class='sdjStatTitle'>#1 <span></span></div>
+        <div class='sdjStatPlayer'></div>
+        <div class='sdjStatValue'></div>
+      </div>
+    </div>
+    <div id='statistic_c'>
+      <div id='player_graph_c' class='graph_box_c'>
+        <div class='graph_title' id='p_graph_title'>Joueurs en ligne pendant les dernières 24h</div>
+        <div class='graph_container'><canvas id="p_player_chart" height='100px' width='100px'></canvas></div>
+        <div class='btn_graph_c'>
+          <div id='pa24h' class='p_btn_graph'>Un jour</div>
+          <div id='pa1w' class='p_btn_graph'>Une semaine</div>
+          <div id='pa1m' class='p_btn_graph'>Un mois</div>
+        </div>
+      </div>
+      <div id='tps_graph_c' class='graph_box_c'>
+        <div class='graph_title' id='tps_graph_title'>Evolution des TPS pendant la derniere heure</div>
+        <div class='graph_container'><canvas id="tps_player_chart" height='100px' width='100px'></canvas></div>
+        <div class='btn_graph_c'>
+          <div id='tps1h' class='tps_btn_graph'>Une heure</div>
+          <div id='tps24h' class='tps_btn_graph'>24 heures</div>
+        </div>
+      </div>
+      <div id='sdj_graph_c' class='graph_box_c'>
+        <p class='test'>SDJ GRAPH</p>
+      </div>
+    </div>
+</div>

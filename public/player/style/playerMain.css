@@ -1,0 +1,451 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans);
+
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f4f7;
+  font-family: 'Google Sans', sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+  overflow: hidden
+}  
+
+html:hover , body:hover {
+  cursor: default
+}
+
+#main_w {
+  display: grid;
+  grid-template-columns: 13% 87%;
+  grid-template-rows: 100%;
+}
+
+#bg {
+  height: 100vh;
+  width: 100vw;
+  filter: blur(100px) brightness(0.3);
+  position: absolute;
+  transition: 0.3s opacity;
+}
+
+.bg1 { background: url("/ressources/background/bg1.svg"); }
+.bg2 { background: url("/ressources/background/bg2.svg"); }
+.bg3 { background: url("/ressources/background/bg3.svg"); }
+
+/* PLAYER WINDOW CONFIGURATION */
+
+.window {
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 2% 64% 33%;
+  grid-template-rows: 5vh 30vh 64vh;
+  overflow: hidden;
+}
+
+.loader {
+  color: rgba(255,255,255,0.8);
+  align-self: center;
+  justify-self: center;
+  grid-column: 1/5;
+  grid-row: 1/4;
+  font-size: 2vh;
+}
+
+.topLeftContainer, .topRightContainer, .bottomContainer {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s
+}
+
+.topLeftContainer {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  width: 95%;
+  justify-self: center;
+  grid-template-columns: 30% 70%;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 3vh
+}
+
+.playerSkin {
+  height: 85%;
+  align-self: center;
+  justify-self: center;
+}
+
+.playerDescContainer {
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  height: 90%;
+  width: 100%;
+}
+
+.playerName {
+  color: rgba(255,255,255,1);
+  font-size: 5vh;
+}
+
+.descpre {
+  color: rgba(255,255,255,0.5);
+  font-size: 1.5vh;
+  display: flex;
+  align-items: center;
+  font-style: italic
+}
+
+.descpre span {
+  color: rgba(255,255,255,0.8);
+  font-size: 2vh;
+  margin-left: 2%;
+  font-style: normal
+}
+
+.topRightContainer {
+  grid-column: 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  width: 70%;
+  height: 50%;
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 3vh
+}
+
+.baseTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.8vh;
+  pointer-events: none;
+}
+
+.homeIco {
+  height: 30%;
+  margin-right: 2%;
+  opacity: 0.8
+}
+
+.baseCoord {
+  height: 100%;
+  width: 100%;
+/*   transform: translateY(-30%); */
+  justify-self: center;
+  align-self: center;
+  color: rgba(255,255,255,0.8);
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.baseCoord div {
+  text-align: center;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.baseCoord .desc {
+  transform: translateY(-50%);
+  font-size: 2vh;
+  transition: 0.5s;
+  color: rgba(5,96,253,1)
+}
+
+.coordHide {
+  background: -webkit-linear-gradient(90deg, rgba(5,96,253,1) 0%, rgba(0,0,0,0) 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bottomContainer {
+  grid-row: 3;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  grid-template-rows: 100%;
+}
+
+.classListContainer {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 3vh;
+  background-color: rgba(255,255,255,0.05);
+  display: grid;
+  grid-template-rows: 10% repeat(5,16%) 10%
+}
+
+.classListTile, .shopsListTile, .statsListTile {
+  justify-self: center;
+  align-self: center;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.75vh
+}
+
+.voirPlusClass, .voirPlusShops, .voirPlusStats{
+  justify-self: center;
+  align-self: center;
+  color: rgba(255,255,255,0.4);
+  font-size: 1.5vh;
+  transition: 0.3s;
+}
+
+.voirPlusClass:hover, .voirPlusShops:hover, .voirPlusStats:hover {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.55vh;
+  transition: 0.3s;
+  cursor: pointer
+}
+
+.classListItem {
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(0,0,0,0.25);
+  height: 90%;
+  width: 90%;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s
+}
+
+.classListItem:hover, .statsLine:hover {
+  box-shadow:inset 0px 0px 0px 2px rgba(255,255,255,0.05);
+  background-color: rgba(0,0,0,0.35);
+  transition: 0.3s;
+  cursor: pointer
+}
+
+.classPos {
+  margin: 0 8%;
+  color: rgba(5,96,253,1);
+  font-size: 2vh;
+}
+
+.className {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.6vh
+}
+
+/* SHOP BOX */
+
+.shopsListContainer {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 3vh;
+  background-color: rgba(255,255,255,0.05);
+  display: grid;
+  grid-template-rows: 10% repeat(3,calc(75/3 * 1%)) 5% 10%;
+  grid-template-columns: 100%
+}
+
+.noShops {
+  grid-row: 2/6;
+  justify-self: center;
+  align-self: center;
+  color: rgba(5,96,253,1);
+  font-size: 2vh;
+  max-width: 90%;
+}
+
+.shopContainer {
+  grid-row: 2/5;
+  display: grid;
+  grid-template-rows: repeat(3, calc(100/3 * 1%));
+  grid-template-columns: 100%; 
+}
+
+.shopLine {
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(0,0,0,0.25);
+  height: 90%;
+  width: 90%;
+  border-radius: 2vh;
+  transition: 0.3s;
+  display: grid;
+  grid-template-columns: 40% 2% 40% 18%;
+  grid-template-rows: 10% 30% 20% 30% 10%;
+}
+
+.shopLine:hover {
+  box-shadow:inset 0px 0px 0px 2px rgba(255,255,255,0.05);
+  background-color: rgba(0,0,0,0.35);
+  transition: 0.3s
+}
+
+.itemContainer, .priceContainer{
+  grid-column: 1;
+  grid-row: 2/5;
+  display: grid;
+  grid-template-rows: 50% 45%;
+  grid-template-columns: 100%;
+  pointer-events: none;
+  overflow: hidden
+}
+
+.priceContainer {
+  grid-column: 3;
+}
+
+.iconContainer {
+  height: 120%;
+  width: 110%;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6vh;
+}
+
+@media (min-height: 1200px) {i{transform: scale(1.5)}}
+@media (max-height: 700px) {i{transform: scale(0.7)}}
+@media (max-height: 500px) {i{transform: scale(0.5)}}
+
+
+.itemTitle, .priceTitle {
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  transition: 0.75s
+}
+
+.itemPrice, .pricePrice {
+  color: rgba(255,255,255,0.8);
+  font-size: 2.2vh;
+}
+
+.itemName, .priceName {
+  color: rgba(255,255,255,0.5);
+  font-size: 1.2vh;
+  font-style: italic
+}
+
+#hrTop, #hrBottom {
+  align-self: end;
+  grid-column: 2;
+  grid-row: 2;
+  height: 75%;
+  color: rgba(255,255,255,0.5);
+  pointer-events: none;
+}
+
+img[alt~="exchangeIcoSVG"] {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2;
+  grid-row: 3;
+  height: 60%;
+  filter: invert(100%) opacity(0.7);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+#hrBottom {
+  align-self: start;
+  grid-row: 4;
+}
+
+.locationContainer {
+  justify-self: start;
+  align-self: center;
+  grid-row: 1/6;
+  grid-column: 4;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+
+img[alt~="locationIcoSVG"] {
+  justify-self: center;
+  align-self: center;
+  margin-right: 1%;
+  filter: invert(100%) opacity(0.5);
+  margin-bottom: 20%;
+  height: 3vh
+}
+
+.locationTitle {
+  color: rgba(255,255,255,0.5);
+  font-size: 1.4vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.playerHasMore {
+  justify-self: center;
+  align-self: center;
+  color: rgba(5,96,253,0.7);
+  opacity: 0;
+}
+
+.voirPlusShops {
+  grid-row: 6;
+}
+
+.statsListContainer {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 3vh;
+  background-color: rgba(255,255,255,0.05);
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 100%
+}
+
+.statsList {
+  display: grid;
+  grid-template-rows: repeat(10,10%);
+  grid-template-columns: 100%
+}
+
+.statsLine {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: rgba(0,0,0,0.25);
+  height: 80%;
+  width: 90%;
+  border-radius: 2vh;
+  transition: 0.3s;
+}
+
+.statsTitle {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.3vh;
+  justify-self: start;
+  align-self: center;
+  padding-left: 5%;
+  pointer-events: none;
+}
+
+.statsValue {
+  color: rgba(5,96,253,1);
+  font-size: 1.3vh;
+  justify-self: end;
+  align-self: center;
+  padding-right: 15%;
+  pointer-events: none;
+}
+
+.voirPlusStats {
+  grid-row: 3;
+}

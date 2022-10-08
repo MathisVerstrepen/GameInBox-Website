@@ -1,0 +1,49 @@
+<div class='window'>
+
+  <div class="topbar">
+    <div class='title_c'>
+      <p class='t_main'>Liste des shops</p>
+      <p class='t_sub'>Liste des différents items, prix et localisation des différentes ventes disponibles au spawn du serveur</p>
+    </div>   
+    <div class="sort_select_c">
+      <label for="sort_select">Afficher par</label>
+      <select name="sort_select">
+        <option value="all">Tout lister</option>
+        <option value="player">Par joueur</option>
+        <option value="popularity">Par popularité</option>
+        <option value="price">Par prix</option>
+      </select>
+    </div>
+    <div class="search_c">
+      <label for="search_bar">Rechercher</label>
+      <input type="text" name="search_bar" placeholder="Nom de l'item...">
+    </div>
+  </div>
+
+  <div class='allShopContainer'>
+    <div class='noShop'>Chargement des données des shops...</div>
+  </div>
+
+  <div class='tradeHistobg hidePopUp'><img src="/ressources/background/bg1.svg" alt="bg"></div>
+  <div class='tradeHisto hidePopUp'>
+    <div class='backbutton'>Retour</div>
+    <div class='smaintitle'>Historique des ventes</div>
+    <div class="histoHeader">
+      <div class="saleVolumeC">
+        <div class="stitle">Volume de vente</div>
+        <div class="svalue"></div>
+      </div>
+      <div class="salePartC">
+        <div class="stitle">Part des ventes totales</div>
+        <div class="svalue"></div>
+      </div>
+      <div class="estimateIncomeC">
+        <div class="stitle">Estimation des revenus</div>
+        <div class="svalue"></div>
+      </div>
+    </div>
+    <div class="tradeList">
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+node_modules/
+updates/
+*.env
+*.txt
+*.old
+purjeredis.js
+redispogdatagenerator.js
