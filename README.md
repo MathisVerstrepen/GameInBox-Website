@@ -1,6 +1,6 @@
 # GameInBox Website - [See here](https://diikstra.fr/gameinbox/accueil/)
 
-![GameInBox Logo](https://github.com/VMathisV/GameInBox-Website/blob/286e5e59e3d386ccb5b0ae9739fd4e366d0aa214/public/gib_github_preview_small.png)
+![GameInBox Logo](https://github.com/VMathisV/GameInBox-Website/blob/473cb9f1e0c683f6281190e42697299a144cfd56/public/gib_github_preview_small.png)
 
 Main site of a Minecraft survival server. <br />
 > State: **Online - no longer updated.**
