@@ -1,4 +1,4 @@
-# GameInBox Website - [See here](https://diikstra.fr/gameinbox/accueil/)
+# GameInBox Website - [See here](https://diikstra.fr/gameinbox/accueil/) (EN MAINTENANCE)
 
 ![GameInBox Logo](https://github.com/VMathisV/GameInBox-Website/blob/473cb9f1e0c683f6281190e42697299a144cfd56/public/gib_github_preview_small.png)
 
